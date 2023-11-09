@@ -129,21 +129,22 @@ body {
             } 
         }
 
+        .underlined {
+            text-decoration: underline;
+        }
+
         p {
             color: #FFF;
             font-size: 20px;
             text-align: left;
             margin-top: 20px;
-        }
-
-        .two-buttons {
-            margin-top: 45px;
+            margin-bottom: 0;
         }
 
         .logo-wrapper {
-
-            margin-top: 397px;
             position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
             width: 208px;
             right: 0;
             overflow: hidden;
