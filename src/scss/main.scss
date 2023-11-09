@@ -26,9 +26,7 @@
 
 body {
 
-    max-width: 100%;
      /*decorator, parent position: relative!
-
     <div class="triangle-decoration"> 
     </div>
 
@@ -229,34 +227,8 @@ body {
     }
 //SECOND SLIDE, DARK BG
 
-    //extend background color
-    
-    .second-slide:before {
-        content:"";
-        background-color: #2d2d2d;
-        position: absolute;
-        height: 645px;
-        width: 3000px;
-        max-width: 1920px;
-        left: -100px;
-        z-index: -1;
-    }
-    /*
-    .second-slide:after{
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: red;
-        content: "";
-      }
-    */
-
     .second-slide {
         background-color: #2d2d2d;
-        height: 645px;
-        //background-size: 100%, 100%;
-        //position: relative;
 
         .slide-title {
             text-transform: uppercase;
@@ -264,24 +236,11 @@ body {
             font-size: 49px;
             font-weight: 900;
             white-space: nowrap;
-            margin-top: 60px;
             margin-bottom: 38px;
         }
 
         .content-wrapper {
-            //position: relative;
             justify-content: right;
-        }
-
-        .top-row {
-            justify-content: space-between;
-            height: 201px;
-        }
-
-        .bottom-row {
-            justify-content: space-between;
-            margin-top: 27px;
-            height: 177px;
         }
 
         .content-box-outline {
