@@ -49,7 +49,6 @@ body {
         font-weight: bold;
         height: 50px;
         border-radius: 0;
-        padding: 15px, 20px;
 
         display: flex;
         align-items: center;
@@ -129,7 +128,18 @@ body {
         }
 
         .underlined {
-            text-decoration: underline;
+            position: relative;
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                margin-top: 3px;
+                height: 5px;
+                width: 100%;
+                background: $primary;
+                left: 0;
+              }
         }
 
         p {
