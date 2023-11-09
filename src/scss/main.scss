@@ -16,6 +16,7 @@
 @import "bootstrap";
 @import "fonts";
 
+
 // If you do not want to load the customized bootstrap version, just use the following line.
 // @import "~bootstrap/scss/bootstrap";
 
@@ -191,7 +192,6 @@ body {
 
     .white-section {
         background: #FFF;
-        height: 751px;
 
         .first-title {
             margin-top: 70px;
@@ -306,10 +306,10 @@ body {
     .number-section {
         height: 403px;
         white-space: nowrap;
-        color: #2d2d2d;
+        color: #25d29b;
         font-size: 150px;
         font-weight: 900;
-        text-shadow: 10px 10px 0 #25d29b;
+        text-shadow: -10px -10px 0 #25d29b;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 2px;
         

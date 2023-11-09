@@ -33,6 +33,18 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/variables-dark";
 
+$spacers: map-merge(
+  $spacers,
+  (
+    5: 50px,
+    6: 60px,
+    7: 70px,
+    8: 80px,
+    9: 90px,
+    10: 100px,
+  )
+);
+
 //---------------------------------------------
 // 4. Maps + Mixins
 //---------------------------------------------
