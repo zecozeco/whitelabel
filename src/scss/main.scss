@@ -269,6 +269,7 @@ body {
             height: 183px;
             width: 182px;
             background-image: linear-gradient(to top right, #25d29d 50%, #2d2d2d 50%);
+            transition: width 0.25s, height 0.25s;
             z-index: 1;
         }
 
@@ -355,6 +356,7 @@ body {
             height: 183px;
             width: 182px;
             background-image: linear-gradient(to top right, #25d29d 50%, #2d2d2d 50%);
+            transition: width 0.25s, height 0.25s;
             z-index: 1;
         }
 
@@ -382,6 +384,7 @@ body {
             width: 350px;
             height: 314px;
             position: relative;
+            //mediaquery margin-top: 10px;
 
             img {
                 width: 75px;
@@ -484,6 +487,7 @@ body {
             height: 183px;
             width: 182px;
             background-image: linear-gradient(to top right, #25d29d 50%, #2d2d2d 50%);
+            transition: width 0.25s, height 0.25s;
             z-index: 1;
         }
 
@@ -557,16 +561,54 @@ body {
 
     @media only screen and (max-width: 1700px) {
 
-        .last-section:before {
-            height: 135px;
-            width: 135px;
-        }
-
         .second-slide:before {
             height: 135px;
             width: 135px;
         }
 
+        .services-section:before {
+            height: 135px;
+            width: 135px;
+        }
+
+        .last-section:before {
+            height: 135px;
+            width: 135px;
+        }
+    }
+
+    @media only screen and (max-width: 1600px) {
+        .second-slide:before {
+            height: 90px;
+            width: 90px;
+        }
+
+        .services-section:before {
+            height: 90px;
+            width: 90px
+        }
+
+        .last-section:before {
+            height: 90px;
+            width: 90px
+        }
+    }
+
+    @media only screen and (max-width: 1500px) {
+        .second-slide:before {
+            height: 0;
+            width: 0;
+        }
+
+        .services-section:before {
+            height: 0;
+            width: 0;
+        }
+
+        .last-section:before {
+            height: 0;
+            width: 0;
+        }
     }
 
 }
