@@ -249,7 +249,7 @@ body {
                     position: absolute;
                     right: 0;
                     top: 0;
-                    transform: translatex(50%) translatey(-50%);
+                    transform: translatex(75%) translatey(-50%);
                     z-index: 1;
                 }
             }
@@ -320,14 +320,23 @@ body {
 //Number section
     .number-section {
 
+        img {
+            height: 142px;
+            width: 85px;
+        }
+
+        .small-text {
+            font-size: 25px;
+        }
+
         .number {
-            white-space: nowrap;
-            color: #25d29b;
+            color: #2d2d2d;
             font-size: 150px;
             font-weight: 900;
-            text-shadow: -10px -10px 0 #2d2d2d;
-            -webkit-text-fill-color: transparent;
+            text-shadow: 10px 10px 0 #25d29b;
             -webkit-text-stroke: 2px;
+
+
         }
         
     }
@@ -336,6 +345,18 @@ body {
 
     .services-section {
         background-color: #2d2d2d;
+        position: relative;
+
+        &:before {
+            content:"";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 183px;
+            width: 182px;
+            background-image: linear-gradient(to top right, #25d29d 50%, #2d2d2d 50%);
+            z-index: 1;
+        }
 
         .slide-title {
             height: 161px;
@@ -415,7 +436,6 @@ body {
             .title-first-part {
                 color: #25d29b;
                 display: flex;
-                margin-top: 80px;
             }
 
             .title-second-part {
@@ -452,19 +472,20 @@ body {
 
     //footer
 
-    .last-section:before {
-        content:"";
-        background-color: #2d2d2d;
-        position: absolute;
-        height: 281px;
-        width: 2000px;
-        left: -1000px;
-        z-index: -1;
-        overflow: hidden;
-    } 
-
     .last-section {
         background-color: #2d2d2d;
+        position: relative;
+
+        &:before {
+            content:"";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 183px;
+            width: 182px;
+            background-image: linear-gradient(to top right, #25d29d 50%, #2d2d2d 50%);
+            z-index: 1;
+        }
 
         .outlined-square {
             border: 1px solid #707070;
@@ -529,7 +550,7 @@ body {
 
             .third-square-text {
                 text-transform: uppercase;
-                font-size: 30px;
+                font-size: 28px;
                 line-height: 30px;
                 font-weight: 900;
             
@@ -555,6 +576,15 @@ body {
                 width: 210px;
             }
         }
+    }
+
+    @media only screen and (max-width: 1400px) {
+
+        .last-section:before {
+            height: 90px;
+            width: 90px;
+        }
+
     }
 
 }
