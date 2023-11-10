@@ -225,19 +225,34 @@ body {
             }
         }
 
-        .numbered-text {
-            position: relative;
-        }
 
-        .shadow-numbers {
-            color: #25d29b;
-            font-size: 100px;
-            font-weight: 900;
-            text-shadow: -10px -10px 0 #25d29b;
-            -webkit-text-fill-color: transparent;
-            -webkit-text-stroke: 2px;
 
-            position: absolute;
+        .numbered-text-wrapper {
+                flex-direction: column;
+
+            .numbered-text {
+                position: relative;
+                text-align: right;
+
+                .short-text {
+                    position: relative;
+                    z-index: 2;
+                }
+
+                .shadow-numbers {
+                    color: #25d29b;
+                    font-size: 100px;
+                    font-weight: 900;
+                    text-shadow: -10px -10px 0 #25d29b;
+                    -webkit-text-fill-color: transparent;
+                    -webkit-text-stroke: 2px;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    transform: translatex(50%) translatey(-50%);
+                    z-index: 1;
+                }
+            }
         }
     }
 //SECOND SLIDE, DARK BG
@@ -299,6 +314,7 @@ body {
             margin-top: 15px;
             margin-bottom: 0;
         }
+
     }
 
 //Number section
