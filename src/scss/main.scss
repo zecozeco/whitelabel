@@ -489,100 +489,82 @@ body {
 
         .outlined-square {
             border: 1px solid #707070;
-            width: 350px;
-            height: 209px;
             margin: 36px 15px;
 
             font-family: Arial, Helvetica, sans-serif;
             color: #FFF;
             font-size: 15px;
+
+            width: 350px;
+            height: 209px;
+            
         }
 
         .first-square {
+
             .logo-image {
-                margin: 15px;
+                margin: 10px 0;
             }
-            .contact-info {
-                margin-left: 15px;
-
-                .greentext {
-                    text-transform: uppercase;
-                    color: #25d29b;
-                    font-weight: bold;
-
-                    display: block;
-                }
-
-                .phone-mail {
-                    font-size: 20px;
-                    margin-bottom: 15px;
-                }
+            .greentext {
+                text-transform: uppercase;
+                color: #25d29b;
+                font-weight: bold;
+                display: block;
             }
+
+            .phone-mail {
+                font-size: 20px;
+            }
+            
         }
 
         .middle-square {
 
             font-weight: bold;
+            justify-content: space-between;
 
             img {
                 height: 50px;
                 width: 50px;
-                /* margin-top: 15px;
-                margin-left: 15px;
-                margin-right: 10px; */
             }
 
-            .all-rows {
-                display: flex;
-                align-items: center;
-                //justify-content: center;
-                margin-top: 15px;
-                //margin-left: 3px;
-
-                .logo-desc {
-                    margin-left: -15px;
-                }
+            .logo-desc {
+                margin-left: 15px;
             }
         }
 
         .third-square {
+            text-transform: uppercase;
+            font-size: 28px;
+            line-height: 30px;
+            font-weight: 900;
             position: relative;
+            padding-top: 10px;
 
-            .third-square-text {
-                text-transform: uppercase;
-                font-size: 28px;
-                line-height: 30px;
-                font-weight: 900;
-            
-                .first-text {
-                    color: #25d29b;
-                    display: flex;
-                    margin-top: 10px;
-                }
-    
-                .second-text {
-                    display: flex;
-                   // margin-top: 20px;
-                    color: transparent;
-                    -webkit-text-stroke: 1px #FFF;
-                }
+            .second-text {
+                display: flex;
+                color: transparent;
+                -webkit-text-stroke: 1px #FFF;
             }
 
             .btn {
                 position: absolute;
-                left: 15px;
-                bottom: 15px;
-                height: 50px;
-                width: 210px;
+                bottom: 2px;
+                left: 10px;
             }
         }
     }
 
-    @media only screen and (max-width: 1400px) {
+    @media only screen and (max-width: 1700px) {
 
         .last-section:before {
-            height: 90px;
-            width: 90px;
+            height: 135px;
+            width: 135px;
+        }
+
+        .second-slide:before {
+            height: 135px;
+            width: 135px;
         }
 
     }
