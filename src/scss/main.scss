@@ -224,6 +224,21 @@ body {
                 font-size: 20px;
             }
         }
+
+        .numbered-text {
+            position: relative;
+        }
+
+        .shadow-numbers {
+            color: #25d29b;
+            font-size: 100px;
+            font-weight: 900;
+            text-shadow: -10px -10px 0 #25d29b;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 2px;
+
+            position: absolute;
+        }
     }
 //SECOND SLIDE, DARK BG
 
@@ -244,11 +259,9 @@ body {
 
         .slide-title {
             text-transform: uppercase;
-            line-height: 35px;
+            line-height: 1;
             font-size: 49px;
             font-weight: 900;
-            white-space: nowrap;
-            margin-bottom: 38px;
         }
 
         .content-wrapper {
@@ -270,7 +283,7 @@ body {
                 width: 65px;
                 top: 50%;
                 left: 0;
-                transform: translate(-50%);
+                transform: translatey(-50%) translateX(-50%);
             }
         }
 
@@ -290,31 +303,22 @@ body {
 
 //Number section
     .number-section {
-        height: 403px;
-        white-space: nowrap;
-        color: #25d29b;
-        font-size: 150px;
-        font-weight: 900;
-        text-shadow: -10px -10px 0 #25d29b;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 2px;
+
+        .number {
+            white-space: nowrap;
+            color: #25d29b;
+            font-size: 150px;
+            font-weight: 900;
+            text-shadow: -10px -10px 0 #2d2d2d;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 2px;
+        }
         
     }
 
 //Services section
 
-     .services-section:before {
-        content:"";
-        background-color: #2d2d2d;
-        position: absolute;
-        height: 554px;
-        width: 1000px;
-        left: -100px;
-        z-index: -1;
-    } 
-
     .services-section {
-        height: 554px;
         background-color: #2d2d2d;
 
         .slide-title {
@@ -382,7 +386,6 @@ body {
         background-image: url("../images/bottom_image.png");
         background-size: cover;
         width: 100%;
-        height: 764px;
         margin-top: 100px;
         margin-bottom: 100px;
 
@@ -446,8 +449,6 @@ body {
 
     .last-section {
         background-color: #2d2d2d;
-        height: 281px;
-        //position: relative;
 
         .outlined-square {
             border: 1px solid #707070;
