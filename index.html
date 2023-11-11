@@ -292,8 +292,8 @@
     </section>
 <!--end services section-->
 <!--start last section-->
-    <section class="image-wrapper pt-8 pb-11">
-        <div id="contact-section" class="container">
+    <section id="contact-section" class="image-wrapper pt-8 pb-11">
+        <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="text-uppercase title">
@@ -313,14 +313,14 @@
                                 <span class="text-uppercase text-primary fw-bold">Contact us</span>
                                 <!--name-->
                                 <div class="row">
-                                    <div class="col-md-6 w-30">
+                                    <div class="col-12 col-md-6">
                                         <div class="md-form mb-0">
                                             <label for="name" class="">Your name and surname</label>
                                             <input type="text" id="name" name="name" class="form-control" placeholder="exp.: John Doe">
                                         </div>
                                     </div>
                                 <!--email-->
-                                    <div class="col-md-6 w-70">
+                                    <div class="col-12 col-md-6">
                                         <div class="md-form mb-0">
                                             <label for="email" class="">E-mail address</label>
                                             <input type="text" id="email" name="email" class="form-control" placeholder="exp.: john.doe@gmail.com">
@@ -328,7 +328,7 @@
                                     </div>
                                 </div>
                                 <!--message-->
-                                <div class="row">
+                                <div class="row mt-2">
                                     <div class="col-12">
                                         <label for="message">Message</label>
                                         <textarea type="text" id="message" name="message" rows="4" class="form-control md-textarea" placeholder="exp.: Hello, I'm writing you in behalf of ..."></textarea>
@@ -340,10 +340,8 @@
                                     <label for="terms" class="form-check-label">I agree with <a href="#">terms and conditions</a></label>
                                 </div>
                             </form>
-                            <!--send button-->
-                            <div class="text-center text-md-left">
-                                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send and inquiry</a>
-                            </div>
+
+                            <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send and inquiry</a>
                         </div>
                     </div>
                     <!--end form-->
