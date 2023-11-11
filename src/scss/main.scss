@@ -361,7 +361,6 @@ body {
         }
 
         .slide-title {
-            height: 161px;
             font-weight: 900;
             text-transform: uppercase;
             font-size: 49px;
@@ -377,7 +376,11 @@ body {
             background-color: #FFF;
             border-radius: 50px 0 0 0;
             position: relative;
+            height: 100%;
             padding: 15px;
+
+            display: flex;
+            flex-direction: column;
 
             img {
                 width: 75px;
@@ -396,17 +399,6 @@ body {
                 font-weight: bold;
             }
 
-            .btn {
-                width: 116px;
-                height: 37px;
-                justify-content: center;
-                align-items: center;
-                //white-space: nowrap;
-                font-size: 15px;
-                position: absolute;
-                left: 15px;
-                bottom: 15px;
-            }
         }
     }
 
