@@ -360,7 +360,7 @@ body {
             z-index: 1;
         }
 
-        .slide-title {
+        /* .slide-title {
             font-weight: 900;
             text-transform: uppercase;
             font-size: 49px;
@@ -370,7 +370,7 @@ body {
                 display: flex;
                 justify-content: center;
             }
-        }
+        } */
 
         .service-item-box {
             background-color: #FFF;
@@ -382,6 +382,10 @@ body {
             display: flex;
             flex-direction: column;
 
+            .service-item-header {
+
+            }
+
             img {
                 width: 75px;
                 height: 75px;
@@ -391,12 +395,12 @@ body {
             h4 {
                 font-size: 25px;
                 font-weight: bold;
+                margin-bottom: 0;
             }
 
             .sub-title {
                 color: #25d29b;
                 font-size: 15px;
-                font-weight: bold;
             }
 
         }
