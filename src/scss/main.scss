@@ -463,20 +463,21 @@ body {
         .outlined-square {
             border: 1px solid #707070;
             color: #FFF;
-           // width: 100%;
             padding: 15px;
             height: 100%;
-            
+        }
+
+        .footer-service-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin: 0;
+            }
         }
 
         .first-square {
-
-            .greentext {
-                text-transform: uppercase;
-                color: #25d29b;
-                font-weight: bold;
-                display: block;
-            }
 
             .phone-mail {
                 font-size: 20px;
