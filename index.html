@@ -10,7 +10,7 @@
 <!--navbar-->
     <nav class="nav-main navbar navbar-expand-lg">
         <div class="container">
-            <div class="row w-100">
+            <div class="row w-100 align-items-center">
                 <div class="col-2">
                     <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
                 </div>
@@ -292,23 +292,25 @@
     </section>
 <!--end services section-->
 <!--start last section-->
-    <section class="image-wrapper">
+    <section class="image-wrapper pt-8 pb-11">
         <div id="contact-section" class="container">
-
-            <div class="row title">
-                <span class="pt-8 title-first-part">Have a project in mind?</span>
-                <span class="pb-4 title-second-part">Bring it on!</span>
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-uppercase title">
+                        <span class="d-block text-primary">Have a project in mind?</span>
+                        <span class="d-block mt-1 title-second-part">Bring it on!</span>
+                    </div>
+                </div>
             </div>
 
-            <div class="row pb-11 content-row">
+            <div class="row">
                 <div class="col-6">
 
                     <!--form-->
                     <div class="row">
-
                         <div class="col-md-9 mb-md-0 mb-5">
                             <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-                                <span class="greentext">Contact us</span>
+                                <span class="text-uppercase text-primary fw-bold">Contact us</span>
                                 <!--name-->
                                 <div class="row">
                                     <div class="col-md-6 w-30">
@@ -335,25 +337,26 @@
                                     </div>
                                 </div>
                                 <!--checkbox-->
-                                <div class="form-check">
+                                <div class="form-check mt-2 mb-3">
                                     <input type="checkbox" class="form-check-input" name="terms" id="terms" value="1">
                                     <label for="terms" class="form-check-label">I agree with <a href="#">terms and conditions</a></label>
                                 </div>
                             </form>
                             <!--send button-->
                             <div class="text-center text-md-left">
-                                <a class="btn btn-primary w-100" onclick="document.getElementById('contact-form').submit();">Send and inquiry</a>
+                                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send and inquiry</a>
                             </div>
                         </div>
                     </div>
                     <!--end form-->
+                    
                 </div>
 
                 <div class="col-6">
-                    <span class="greentext">Call us</span>
-                    <span class="bottompart">00386 41 589 968</span>
-                    <span class="greentext">Write us</span>
-                    <span class="bottompart">info@whitelabel.si</span>  
+                    <span class="text-uppercase text-primary fw-bold">Call us</span>
+                    <span class="d-block contact-info">00386 41 589 968</span>
+                    <span class="text-uppercase text-primary fw-bold">Write us</span>
+                    <span class="d-block contact-info">info@whitelabel.si</span>
                 </div>
             </div>
         </div>
@@ -368,10 +371,10 @@
                         <!--first square-->
                         <div class="col-12 col-md-4">
                             <div class="outlined-square d-flex flex-column align-items-start first-square">
-                                <img class="mb-2" src="images/logo.png" alt="">
+                                <img class="mb-3" src="images/logo.png" alt="">
                                 <span class="text-uppercase text-primary fw-bold d-block">Call us</span>
                                 <a href="tel:0038641589968" class="fs-5 text-white text-decoration-none">00386 41 589 968</a>
-                                <span class="text-uppercase text-primary fw-bold d-block">Write us</span>
+                                <span class="text-uppercase text-primary fw-bold d-block mt-2">Write us</span>
                                 <a href="mailto:info@whitelabel.si" target="_blank" class="fs-5 text-white text-decoration-none">info@whitelabel.si</a>
                             </div>
                         </div>

@@ -398,48 +398,24 @@ body {
         margin-top: 100px;
         margin-bottom: 100px;
 
+        color: #FFF;
+        font-size: 15px;
+
         .title {
-            text-transform: uppercase;
-            font-size: 95px;
+            font-size: 85px;
             font-weight: 900;
-            line-height: 70px;
-            white-space: nowrap;
-        
-            .title-first-part {
-                color: #25d29b;
-                display: flex;
-            }
+            line-height: 1;
 
             .title-second-part {
-                display: flex;
-                margin-top: 20px;
                 color: transparent;
                 -webkit-text-stroke: 2px #FFF;
             }
         }
 
-        .content-row {
-            color: #FFF;
-            margin-top: 50px;
-            font-size: 15px;
-
-            .greentext {
-                text-transform: uppercase;
-                color: #25d29b;
-                font-weight: bold;
-            }
-
-            .bottompart {
-                display: block;
-                font-size: 31px;
-                white-space: nowrap;
-            }
-
-            .form-check {
-                margin-top: 10px;
-                margin-bottom: 20px;
-            }
+        .contact-info {
+            font-size: 31px;
         }
+        
     }
 
     //footer
