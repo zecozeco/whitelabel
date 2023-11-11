@@ -360,22 +360,9 @@ body {
             z-index: 1;
         }
 
-        /* .slide-title {
-            font-weight: 900;
-            text-transform: uppercase;
-            font-size: 49px;
-            align-items: center;
-
-            span {
-                display: flex;
-                justify-content: center;
-            }
-        } */
-
         .service-item-box {
             background-color: #FFF;
             border-radius: 50px 0 0 0;
-            position: relative;
             height: 100%;
             padding: 15px;
             display: flex;
@@ -476,16 +463,14 @@ body {
         .outlined-square {
             border: 1px solid #707070;
             color: #FFF;
-
-            width: 100%;
+           // width: 100%;
+            padding: 15px;
+            height: 100%;
             
         }
 
         .first-square {
 
-            .logo-image {
-                margin: 10px 0;
-            }
             .greentext {
                 text-transform: uppercase;
                 color: #25d29b;
@@ -500,7 +485,6 @@ body {
         }
 
         .middle-square {
-
             font-weight: bold;
             justify-content: space-between;
 
@@ -519,7 +503,7 @@ body {
             font-size: 28px;
             line-height: 30px;
             font-weight: 900;
-            position: relative;
+            //position: relative;
             padding-top: 10px;
 
             .second-text {
@@ -528,11 +512,6 @@ body {
                 -webkit-text-stroke: 1px #FFF;
             }
 
-            .btn {
-                position: absolute;
-                bottom: 2px;
-                left: 10px;
-            }
         }
     }
 
