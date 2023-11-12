@@ -26,11 +26,6 @@
 
 body {
 
-     /*decorator, parent position: relative!
-    <div class="triangle-decoration"> 
-    </div>
-
-    */
     .triangle-decoration {
         position: absolute;
         top: 0px;
@@ -71,6 +66,18 @@ body {
             background-image: linear-gradient(to top right, #25d29d 50%, #2d2d2d 50%);
             transition: width 0.25s, height 0.25s;
             z-index: 1;
+        }
+    }
+
+    .shadow-numbers, .number {
+        &:after {
+            content: attr(data-text);
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: transparent;
+            -webkit-text-stroke: 2px #25d29b;                
+            z-index: -1;
         }
     }
 
@@ -165,21 +172,22 @@ body {
                 img {
                     width: 75px;
                     height: 75px;
-                    margin-left: 10px;
+                    margin: 10px;
                 }
 
-                    background-color: rgba(255,255,255,0.5);
-                    height: 95px;
-                    border-radius: 50px 0px 0px 50px;
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 10px;
-                    width: 208px;
-                    backdrop-filter: blur(35px);
+                background-color: rgba(255,255,255,0.5);
+                width: 208px;
+                border-radius: 50px 0px 0px 50px;
+                display: flex;
+                align-items: center;
+                backdrop-filter: blur(35px);
+                transition: 0.5s;
+
                 }
 
                 .bd-ft {
                     margin-left: 15px;
+                    transition: 0.5s;
                 }
 
                 .bd-ui {
@@ -195,7 +203,7 @@ body {
 
         h2 {
             font-size: 90px;
-            line-height: 0.8;
+            line-height: 0.7;
 
             .transparent-text {
                 -webkit-text-stroke: 2px #2d2d2d;
@@ -203,9 +211,7 @@ body {
         }
 
         .whitelabel-promises {
-            color: #2d2d2d;
             font-size: 25px;
-
 
             .second-paragraph {
                 color: #878787;
@@ -213,33 +219,32 @@ body {
             }
         }
 
-        .numbered-text-wrapper {
-                flex-direction: column;
+        .numbers-wrapper {
+            height: 100%;
+        }
 
-            .numbered-text {
+         .numbered-text {
+            position: relative;
+            text-align: right;
+ 
+            .short-text {
                 position: relative;
                 text-align: right;
+                z-index: 3;
+            }
 
-                .short-text {
-                    position: relative;
-                    z-index: 2;
-                }
-
-                .shadow-numbers {
-                    color: #25d29b;
-                    font-size: 100px;
-                    font-weight: 900;
-                    text-shadow: -10px -10px 0 #25d29b;
-                    -webkit-text-fill-color: transparent;
-                    -webkit-text-stroke: 2px;
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                    transform: translatex(75%) translatey(-50%);
-                    z-index: 1;
-                }
+            .shadow-numbers {
+                font-size: 100px;
+                font-weight: 900;
+                line-height: 1;
+                position: absolute;
+                right: 0;
+                top: 0;
+                transform: translatex(80%) translatey(-50%);
+                z-index: 2;
             }
         }
+        
     }
 //SECOND SLIDE, DARK BG
 
@@ -261,10 +266,10 @@ body {
 
             img {
                 position: absolute;
-                height: 65px;
-                width: 65px;
                 top: 50%;
                 left: 0;
+                height: 65px;
+                width: 65px;
                 transform: translatey(-50%) translateX(-50%);
             }
         }
@@ -294,15 +299,15 @@ body {
 
         .small-text {
             font-size: 25px;
+            white-space: nowrap;
+            transform: translateY(15px);
         }
 
         .number {
-            color: #2d2d2d;
             font-size: 150px;
             font-weight: 900;
-            text-shadow: 10px 10px 0 #25d29b;
-            -webkit-text-stroke: 2px;
-
+            line-height: 1;
+            position: relative;
         }
         
     }
@@ -452,6 +457,18 @@ body {
                 width: 0;
             }
         }
+
+        .blurred-decoration {
+            transform: translateX(40%);
+        }
+
+        .hero-wrapper {
+            .logo-wrapper {
+                .bd-ft, .bd-ui {
+                    margin-left: 0;
+                }
+            }
+        }        
     }
 }
 
